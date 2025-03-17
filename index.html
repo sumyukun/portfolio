@@ -15,13 +15,34 @@
         <header>
             <img draggable="false" class="logo" src="./images/logo.svg">
             <nav class="header-menu">
-                <a href="./projects">Projects</a>
-                <a href="./about">About</a>
-                <a href="./news">News</a>
-                <a href="./team">Team</a>
-                <a href="./contact">Contact</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">News</a>
+                <a href="#">Team</a>
+                <a href="#">Contact</a>
                 <a class="template-button" href="./template">Get template</a>
             </nav>
+            <div id="templateForm" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background-color:white; padding:20px; border:1px solid #ccc; z-index:1000;">
+                <form id="getTemplateForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="button" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <script>
+                document.querySelector('.template-button').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    document.getElementById('templateForm').style.display = 'block';
+                });
+                function closeForm() {
+                    document.getElementById('templateForm').style.display = 'none';
+                }
+            </script>
         </header>
         <main>
             <div class="screen-container-1">
@@ -35,7 +56,7 @@
                     ">Wishbone+Partners</p>
                     <h1>The home of beautiful architecture.</h1>
                     <p class="text1">We are an architecture firm with a focus on beautiful but functional design. At its heart, we believe design is about usability and accessibility — these are the guiding principles for our work. Read more about our previous projects, our process and our team below.</p>
-                    <a class="Read-more" href="./readmore">Read more</a>
+                    <a class="Read-more" href="#">Read more</a>
                 </div>
                 <div>
                     <img draggable="false" class="house" src="images/house.png">
@@ -98,6 +119,7 @@
                         <p>We are an architecture firm with a focus on beautiful but functional design. At its heart, we believe design is about usability and accessibility</p>
                     </div>
                 </div>
+            </div>
                 <div class="screen5">
                     <img draggable="false" class="img-screen5" src="images/screen5.jpeg">
                     <div class="text-screen5">
@@ -138,7 +160,94 @@
                         <img draggable="false" src="images/grid-logo4.svg">
                     </div>
                 </div>
-            </div>
+                <div class="screen7">
+                    <img draggable="false" class="img-screen7" src="images/screen7.jpeg">
+                        <div class="text-screen7">
+                            <h4>The marble staircase</h4>
+                            <p>This stairs is so cool man trust me i say u</p>
+                        </div>
+                </div>
+                    <div class="screen8-container">
+                        <div class="screen8-text">
+                            <h2>Featured projects</h2>
+                            <p>Some of the latest and greatest projects from us here at Wishbone+Partners.</p>
+                        </div>
+                        <div class="screen8-pics">
+                            <img src="./images/screen8-1.jpeg">
+                            <img src="./images/screen8-2.jpeg">
+                            <img src="./images/screen8-3.jpeg">
+                        </div>
+                        <div class="button-container">
+                            <a href="#">View all projects</a>
+                        </div>
+                    </div>
+                    <div class="screen9">
+                            <div class="screen9-text">
+                                <h2>Meet our team</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis.</p>
+                                <a href="#">See team</a>
+                            </div>
+                            <div class="screen9-team">
+                                <div class="stephen">
+                                    <img draggable="false" class="stephen-photo" src="images/stephen.png">
+                                    <div class="stephen-name">
+                                        <h3>Stephen Collier</h3>
+                                        <p>Senior Partner</p>
+                                    </div>
+                                </div>
+                                <div class="stephen">
+                                    <img draggable="false" class="stephen-photo" src="images/stephen.png">
+                                    <div class="stephen-name">
+                                        <h3>Stephen Collier</h3>
+                                        <p>Senior Partner</p>
+                                    </div>
+                                </div>
+                                <div class="stephen">
+                                    <img draggable="false" class="stephen-photo" src="images/stephen.png">
+                                    <div class="stephen-name">
+                                        <h3>Stephen Collier</h3>
+                                        <p>Senior Partner</p>
+                                    </div>
+                                </div>
+                                <div class="stephen">
+                                    <img draggable="false" class="stephen-photo" src="images/stephen.png">
+                                    <div class="stephen-name">
+                                        <h3>Stephen Collier</h3>
+                                        <p>Senior Partner</p>
+                                    </div>
+                                </div>
+                                <div class="stephen">
+                                    <img draggable="false" class="stephen-photo" src="images/stephen.png">
+                                    <div class="stephen-name">
+                                        <h3>Stephen Collier</h3>
+                                        <p>Senior Partner</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen10-container">
+                            <div class="screen10-text">
+                                <div class="screen10-left">
+                                    <h4>Get in touch</h4>
+                                    <p>Think we would be a good fit for your next project?</p>
+                                </div>
+                             </div>
+                                <div class="screen10-right">
+                                <a href="#">Get in touch</a>
+                            </div>
+                        </div>
+                        <footer class="footer">
+                            <div class="footer-left">
+                                <img src="./images/logo.svg" style="margin-bottom: 20px;">
+                                <p>Powered by Denis Rvachev</p>
+                                <p>All rights reserved Wishbone+Partners, Inc.Licensing</p>
+                            </div>
+                                <div class="footer-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/> </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/> </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/> </svg>
+                                </div>
+                        </footer>
         </main>
         <script src="" async defer></script>
     </body>
